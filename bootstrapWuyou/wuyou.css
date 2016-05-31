@@ -1,0 +1,653 @@
+body
+{
+    font-family: '宋体';
+    /*  background-image: url(images/background.jpg);
+   background-repeat:no-repeat;  */
+   font-size: 14px;
+}
+
+#wuYouHeader
+{
+    font-size: 12px;
+
+    height: 45px;
+    min-height: 45px;
+    margin: 0;
+
+    color: white;
+    border-width: 0;
+    border-radius: 0;
+    background: #4e4e4e;
+}
+
+/* 品牌图 */
+#wuYouHeader .brand-image1
+{
+    padding-top: 10px;
+}
+
+
+
+/* 登陆表单 */
+.navbar-form
+{
+    padding-right: 5px;
+}
+.navbar-form .form-control
+{
+    font-size: 12px;
+
+    width: 164px;
+    height: 30px;
+    padding: 4px 2px;
+
+    border: 1px solid #ccc;
+}
+/* 登陆按钮*/
+.navbar-form .btn-default
+{
+    font-size: 12px;
+
+    width: 57px;
+    height: 30px;
+    padding: auto;
+
+    color: white;
+    border-width: 0;
+    background-color: #ffa818;
+}
+
+.navbar-right .navbar-text
+{
+    margin-right: 5px;
+}
+.navbar-right .checkbox
+{
+    padding-top: 5px;
+}
+
+.navbar-right  a.navbar-link:link
+{
+    color: white;
+}
+.navbar-right  a.navbar-link:visited
+{
+    color: white;
+}
+.navbar-right  a.navbar-link:hover
+{
+    color: white;
+}
+.navbar-right a.navbar-link:active
+{
+    color: white;
+}
+
+/* 中间部分 */
+.middle
+{
+    height: 650px;
+    margin-top: 20px;
+    padding-bottom: 44px;
+
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+}
+
+.middle .left div.col-md-12{
+	margin-left: 0;
+	margin-right: 0;
+	width: 270px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.middle .left div.row{
+	
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.middle  div#row1{
+	
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.middle  div#row1 #colright,
+.middle  div#row1 .right{
+	padding: 0;
+	width: 810px;
+	background-color: white;
+}
+
+
+/* 中间左边部分 */
+.middle .left
+{
+    font-family: '微软雅黑';
+
+    width: 270px;
+    padding: 0;
+}
+.left ul > li
+{
+    width: 90px;
+}
+.left ul > li a
+{
+    margin: 0;
+}
+
+.left .nav-tabs a
+{
+    font-weight: bold;
+
+    color: white;
+}
+
+.left .nav-tabs a#jingyingid
+{
+    color: white;
+    border-color: #3c3c3c;
+    border-top-width: 5px;
+    border-top-color: #ffa818;
+    border-radius: 0;
+    background-color: #3c3c3c;
+}
+.left .nav-tabs a#caseid,
+.left .nav-tabs a#lietouid
+{
+    color: white;
+    border-color: #a3a3a3;
+    border-top-width: 5px;
+    border-radius: 0;
+    background-color: #a3a3a3;
+}
+
+
+.left .tab-content
+{
+    height: 558px;
+    padding: 15px;
+
+    color: white;
+    background-color: #3c3c3c;
+}
+
+
+/* 精英页面的 */
+.left .tab-content #jingying label
+{
+    font-weight: normal;
+}
+
+
+.left .tab-content #jingying .tablefrom1
+{
+    padding-top: 2px;
+}
+/* 输入框之间的距离 */
+.tab-content   div.input-group
+{
+    padding-top: 8px;
+}
+
+
+/* 每个输入框的大小 */
+.left .tab-content input.form-control
+{
+    width: 240px;
+    height: 34px;
+
+    border-radius: 0;
+}
+#jingying div#jvzhudi
+{
+    position: relative;
+}
+
+#jingying div#jvzhudi .glyphicon-th
+{
+    position: absolute;
+    z-index: 999;
+    top: 43px;
+    left: 220px;
+
+    color: #3c3c3c;
+}
+
+#jingying button
+{
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    color: white;
+    border-color: #ffa818;
+    background-color: #ffa818;
+}
+#jingying p.text-right a:link,
+#jingying p.text-right a:visited,
+#jingying p.text-right a:hover,
+#jingying p.text-right a:active
+{
+    color: white;
+}
+
+/* <!-- 居住城市Modal --> */
+#myModal
+{
+    font-family: '微软雅黑';
+}
+
+
+/* Case页面的 */
+
+.left .tab-content #case  label
+{
+    font-weight: normal;
+}
+
+.left .tab-content div#case div.checkbox
+{
+    font-size: 8px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.left .tab-content div#case div#casemingchengid
+{
+    position: relative;
+
+    padding-top: 0;
+}
+
+.left .tab-content div#case span.glyphicon-th
+{
+    position: absolute;
+    z-index: 998;
+    top: 10px;
+    left: 220px;
+
+    color: #3c3c3c;
+}
+
+.left .tab-content div#case div#nianxinid,
+.left .tab-content div#case div#hangyeid
+{
+    position: relative;
+}
+
+.left .tab-content div#case div#nianxinid  button.dropdown-toggle,
+.left .tab-content div#case div#hangyeid  button.dropdown-toggle
+{
+    position: absolute;
+    top: 22px;
+    left: -33px;
+
+    border-color: #ccc;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-radius: 0;
+    background-color: white;
+}
+.left .tab-content div#case div#nianxinid .dropdown-menu,
+.left .tab-content div#case div#hangyeid .dropdown-menu
+{
+    width: 240px;
+    margin-top: 0;
+
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 0;
+}
+
+#case button.sousuo
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: white;
+    border-color: #ffa818;
+    background-color: #ffa818;
+}
+
+.left .tab-content div#case div.input-group label{
+	margin-bottom: 2px;
+}
+
+#case  img{
+	margin-top: 15px;
+}
+
+
+/* 猎头页面 */
+.left .tab-content #lietou  label
+{
+    font-weight: normal;
+}
+
+.left .tab-content div#lietou div#lietoumingchengid
+{
+    position: relative;
+
+    padding-top: 8px;
+}
+
+.left .tab-content div#lietou span.glyphicon-th
+{
+    position: absolute;
+    z-index: 998;
+    top: 43px;
+    left: 220px;
+
+    color: #3c3c3c;
+}
+
+#lietou button.sousuo
+{
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    color: white;
+    border-color: #ffa818;
+    background-color: #ffa818;
+}
+
+#lietou  img{
+	margin-top: 176px;
+}
+
+
+/* 右边部分的大小 */
+
+.middle .right
+{
+	height: 604px;
+
+}
+.middle .right .row2
+{
+	margin:0;
+
+}
+
+
+
+/* 右边上面的大小 */
+.right  .righttop
+{   
+    padding:0;
+    width: 810px;
+    height: 400px;
+   
+}
+
+.righttop ul#centerwell{
+  overflow: auto;
+  padding: 0;
+  list-style-type:none;
+  
+}
+.righttop ul#centerwell #photo1,
+.righttop ul#centerwell #photo2,
+.righttop ul#centerwell #photo3
+{
+  position: relative;
+  float: left;
+  height: 400px;
+  width: 135px;
+  padding: 0;
+  margin:0;
+  overflow: hidden;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold;
+  color:#3d3d3d;
+  /* color: #A3A3A3; */
+  
+}
+
+
+
+.righttop ul#centerwell #photo1{
+  width: 540px;
+}
+
+
+.righttop ul#centerwell #photo1 .imgpho,
+.righttop ul#centerwell #photo2 .imgpho,
+.righttop ul#centerwell #photo3 .imgpho{
+    width: 135px;
+    height: 400px;
+}
+
+.righttop ul#centerwell #photo1 .imgpho{
+  background-image: url(images/photo11.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+
+.righttop ul#centerwell #photo2 .imgpho{
+  background-image: url(images/photo2.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.righttop ul#centerwell #photo3 .imgpho{
+  background-image: url(images/photo3.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.righttop ul#centerwell .phototext{
+  position: absolute;
+  top: 0;
+  left: 135px;
+  width: 395px;
+  height: 380px;
+  margin-left: 10px;
+  margin-top: 20px;
+ 
+}
+
+.righttop ul#centerwell #photo1 .phototext .content1 .text,
+.righttop ul#centerwell #photo1 .phototext .content2 .text,
+.righttop ul#centerwell #photo1 .phototext .content3 .text,
+.righttop ul#centerwell #photo1 .phototext .content4 .text,
+.righttop ul#centerwell #photo2 .phototext .content1 .text,
+.righttop ul#centerwell #photo2 .phototext .content2 .text,
+.righttop ul#centerwell #photo2 .phototext .content3 .text,
+.righttop ul#centerwell #photo2 .phototext .content4 .text,
+.righttop ul#centerwell #photo3 .phototext .content1 .text,
+.righttop ul#centerwell #photo3 .phototext .content2 .text,
+.righttop ul#centerwell #photo3 .phototext .content3 .text,
+.righttop ul#centerwell #photo3 .phototext .content4 .text
+
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 70px;
+  line-height: 70px;
+  width: 135px;
+  text-align:center;
+  border-right:2px solid #A3A3A3;
+
+ 
+
+}
+
+
+.righttop ul#centerwell #photo1 .phototext .content1 div.tubiao,
+.righttop ul#centerwell #photo2 .phototext .content1 div.tubiao,
+.righttop ul#centerwell #photo3 .phototext .content1 div.tubiao{
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 70px;
+  line-height: 70px;
+  width: 135px;
+  text-align:center;
+
+}
+
+.righttop ul#centerwell #photo1 .phototext .content2 div.tubiao,
+.righttop ul#centerwell #photo2 .phototext .content2 div.tubiao,
+.righttop ul#centerwell #photo3 .phototext .content2 div.tubiao{
+    position: absolute;
+    top: 85px;
+    left: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 70px;
+    line-height: 70px;
+    width: 135px;
+    text-align: center;
+}
+
+.righttop ul#centerwell #photo1 .phototext .content3 div.tubiao,
+.righttop ul#centerwell #photo2 .phototext .content3 div.tubiao,
+.righttop ul#centerwell #photo3 .phototext .content3 div.tubiao{
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 70px;
+  line-height: 70px;
+  width: 135px;
+  text-align:center;
+}
+
+.righttop ul#centerwell #photo1 .phototext .content4 div.tubiao,
+.righttop ul#centerwell #photo2 .phototext .content4 div.tubiao,
+.righttop ul#centerwell #photo3 .phototext .content4 div.tubiao{
+  position: absolute;
+  top: 255px;
+  left: 150px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 70px;
+  line-height: 70px;
+  width: 135px;
+  text-align:center;
+}
+
+.righttop ul#centerwell  #photo1 .phototext .content1 div.tubiao span,
+.righttop ul#centerwell  #photo1 .phototext .content2 div.tubiao span,
+.righttop ul#centerwell  #photo1 .phototext .content3 div.tubiao span,
+.righttop ul#centerwell  #photo1 .phototext .content4 div.tubiao span,
+.righttop ul#centerwell  #photo2 .phototext .content1 div.tubiao span,
+.righttop ul#centerwell  #photo2 .phototext .content2 div.tubiao span,
+.righttop ul#centerwell  #photo2 .phototext .content3 div.tubiao span,
+.righttop ul#centerwell  #photo2 .phototext .content4 div.tubiao span,
+.righttop ul#centerwell  #photo3 .phototext .content1 div.tubiao span,
+.righttop ul#centerwell  #photo3 .phototext .content2 div.tubiao span,
+.righttop ul#centerwell  #photo3 .phototext .content3 div.tubiao span,
+.righttop ul#centerwell  #photo3 .phototext .content4 div.tubiao span{
+
+  font-size:40px;
+  color: #A3A3A3;
+
+}
+.righttop ul#centerwell #photo1 .phototext .content1 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo1 .phototext .content2 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo1 .phototext .content3 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo1 .phototext .content4 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo2 .phototext .content1 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo2 .phototext .content2 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo2 .phototext .content3 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo2 .phototext .content4 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo3 .phototext .content1 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo3 .phototext .content2 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo3 .phototext .content3 div.tubiao .tubiaotext,
+.righttop ul#centerwell #photo3 .phototext .content4 div.tubiao .tubiaotext{
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.rightbottom  .casegudong{
+    height: 50px;
+    line-height: 50px;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#scrollDiv .scrollText{
+    overflow: hidden;
+    width: 780px;
+    height: 120px;
+
+}
+#scrollDiv .scrollText ul li{
+    list-style-type:none;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+footer{
+    margin:5px 10%;
+}
+footer #footerbottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer #footerbottom div{
+    margin: 0 15px;
+    font-size: 12px;
+    text-align: center;
+
+
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    /* 响应式的导航栏 */
+    .navbar-right .checkbox
+    {
+        color: black;
+    }
+    .navbar-right  a.navbar-link:link
+    {
+        color: black;
+    }
+    .navbar-right  a.navbar-link:visited
+    {
+        color: black;
+    }
+    .navbar-right  a.navbar-link:hover
+    {
+        color: black;
+    }
+    .navbar-right a.navbar-link:active
+    {
+        color: black;
+    }
+
+    #wuYouHeader .brand-image2
+    {
+        display: none;
+    }
+
+    
+    div#bs-example-navbar-collapse-1{
+        background-color: #4e4e4e;
+    }
+     div#bs-example-navbar-collapse-1 form{
+        border-width: 0;
+
+     }
+}

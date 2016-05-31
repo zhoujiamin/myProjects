@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>BootstrapWuyouzjm</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+-->
+<link href="wuyou.css" rel="stylesheet"></head>
+<body>
+
+<!-- 导航 -->
+
+<nav class="navbar navbar-default navbar-static-top" id="wuYouHeader">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand-image1" href="#">
+        <img alt="Brand" src="images/headbrand.png"></a>
+      <a class="navbar-brand brand-image2  " href="#">
+        <img alt="Brand" src="images/title.png"></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <form class="navbar-form " role="search">
+            <div class="form-group">
+              <label class="sr-only">账号</label>
+              <input type="text" class="form-control" placeholder="邮箱/手机/用户名/51job账号">
+              <label class="sr-only">密码</label>
+              <input type="text" class="form-control" placeholder="密码"></div>
+            <button type="submit" class="btn btn-default">登陆</button>
+          </form>
+        </li>
+        <li>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked="checked" value="">自动登陆</label>
+          </div>
+        </li>
+        <li>
+          <p class="navbar-text navbar-right">
+            <a href="#" class="navbar-link">忘记密码？</a>
+          </p>
+        </li>
+        <li>
+          <p class="navbar-text navbar-right">
+            <a href="#" class="navbar-link">注册</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- 导航 结束-->
+
+<!-- 中间部分 -->
+<div class="middle">
+
+  <div class="container">
+    <div class="row" id="row1">
+      <div class="col-md-3 left">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a id="jingyingid" href="#jingying" aria-controls="home" role="tab" data-toggle="tab">找精英</a>
+              </li>
+              <li role="presentation">
+                <a id="caseid" href="#case" aria-controls="profile" role="tab" data-toggle="tab">找case</a>
+              </li>
+              <li role="presentation">
+                <a id="lietouid" href="#lietou" aria-controls="messages" role="tab" data-toggle="tab">找猎头</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane  active" id="jingying">
+                <div class="tablefrom1">
+                  <form>
+                    <div class="input-group">
+                      <label for="exampleInputName2">关键字</label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="输入关键字"></div>
+                    <div class="input-group" id="jvzhudi">
+                      <label for="exampleInputName2">居住地</label>
+                      <span class=" glyphicon glyphicon-th" aria-hidden="true" data-toggle="modal" data-target="#myModal1"></span>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="居住地"></div>
+                    <div class="input-group">
+                      <label for="exampleInputName2">职位/部门</label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="输入内容"></div>
+                    <div class="input-group">
+                      <label for="exampleInputName2">公司</label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="输入公司名称"></div>
+                    <button type="submit" class="btn btn-default btn-block">搜索</button>
+                  </form>
+                  <div>
+                    <p class="text-right">
+                      <a href="#">试一试公司架构搜索</a>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <img src="images/advert.gif" class="img-responsive" alt="Responsive image"></div>
+
+              </div>
+
+              <div role="tabpanel" class="tab-pane " id="case">
+                <div class="tablefrom2">
+                  <form>
+                    <div class="input-group">
+                      <label for="exampleInputName3">Case名称/ID</label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="输入内容"></div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">含全文搜索</label>
+                    </div>
+                    <div class="input-group" id="casemingchengid">
+                      <span class=" glyphicon glyphicon-th" aria-hidden="true" data-toggle="modal" data-target="#myModal2"></span>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="选择地区"></div>
+
+                    <div class="input-group" id="nianxinid">
+                      <label>年薪</label>
+                      <input type="text" class="form-control"  placeholder="选择年薪">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li>
+                            <a href="#">请选择</a>
+                          </li>
+                          <li>
+                            <a href="#">10万以上</a>
+                          </li>
+                          <li>
+                            <a href="#">10万到20万</a>
+                          </li>
+                          <li>
+                            <a href="#">20万到40万</a>
+                          </li>
+                          <li>
+                            <a href="#">40万到80万</a>
+                          </li>
+                          <li>
+                            <a href="#">80万以上</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /btn-group --> </div>
+
+                    <div class="input-group" id="hangyeid">
+                      <label>行业</label>
+                      <input type="text" class="form-control"  placeholder="选择行业">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li>
+                            <a href="#">请选择</a>
+                          </li>
+                          <li>
+                            <a href="#">金融</a>
+                          </li>
+                          <li>
+                            <a href="#">房地产</a>
+                          </li>
+                          <li>
+                            <a href="#">ICT</a>
+                          </li>
+                          <li>
+                            <a href="#">电子半导体</a>
+                          </li>
+                          <li>
+                            <a href="#">零售业</a>
+                          </li>
+                          <li>
+                            <a href="#">其他行业</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /btn-group --> </div>
+
+                    <div class="input-group">
+                      <label for="exampleInputName5">猎头顾问/猎头公司/顾问介绍</label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="输入内容"></div>
+                    <button type="submit" class="btn btn-default btn-block sousuo">搜索</button>
+                  </form>
+                </div>
+                <div>
+                  <img src="images/advert.gif" class="img-responsive" alt="Responsive image"></div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane " id="lietou">
+
+                <div class="tablefrom2">
+                  <form>
+                    <div class="input-group">
+                      <label for="exampleInputName7">猎头顾问/猎头公司</label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="输入内容"></div>
+
+                    <div class="input-group" id="lietoumingchengid">
+                      <label for="exampleInputName8">选择地区</label>
+                      <span class=" glyphicon glyphicon-th" aria-hidden="true" data-toggle="modal" data-target="#myModal2"></span>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="选择地区"></div>
+                    <button type="submit" class="btn btn-default btn-block sousuo">搜索</button>
+                  </form>
+                </div>
+                <div>
+                  <img src="images/advert.gif" class="img-responsive" alt="Responsive image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-9" id="colright">
+        <div class="container right">
+          <div class="row row2 ">
+            <div class="col-md-12  righttop">
+
+              <ul id="centerwell">
+                <li id="photo1">
+                  <div class="imgpho">
+                    <!-- <img src="images/try1.jpg">--></div>
+                  <div class="phototext">
+
+                    <div class="content1">
+                      <div class="text">把握高薪职位</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                          <div class="tubiaotext">搜索</div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="content2">
+                      <div class="text">线上实时沟通</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-credit-card" aria-hidden="true">
+                          <div class="tubiaotext">递名片</div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="content3">
+
+                      <div class="text">查看猎头资源</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-file" aria-hidden="true">
+                          <div class="tubiaotext">人脉管理</div>
+                        </span>
+                      </div>
+
+                    </div>
+
+                    <div class="content4">
+
+                      <div class="text">设置精英名片</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true">
+                          <div class="tubiaotext">我的档案</div>
+                        </span>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </li>
+                <li id="photo2">
+                  <div class="imgpho">
+                    <!-- <img src="images/try1.jpg">--></div>
+                  <div class="phototext">
+
+                    <div class="content1">
+                      <div class="text">挖掘精英资源</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                          <div class="tubiaotext">搜索精英</div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="content2">
+                      <div class="text">线上实时沟通</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-credit-card" aria-hidden="true">
+                          <div class="tubiaotext">递名片</div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="content3">
+
+                      <div class="text">拓展猎头业务</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-credit-card" aria-hidden="true">
+                          <div class="tubiaotext">搜索企业Case</div>
+                        </span>
+                      </div>
+
+                    </div>
+
+                    <div class="content4">
+
+                      <div class="text">建立猎头品牌</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true">
+                          <div class="tubiaotext">猎头档案</div>
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+                <li id="photo3">
+                  <div class="imgpho">
+                    <!-- <img src="images/try1.jpg">--></div>
+                  <div class="phototext">
+                    <div class="content1">
+                      <div class="text">企业招聘委托</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                          <div class="tubiaotext">发布企业Case</div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="content2">
+                      <div class="text">寻找猎头资源</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-credit-card" aria-hidden="true">
+                          <div class="tubiaotext">查看猎头档案</div>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="content3">
+
+                      <div class="text">线上实时沟通</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-credit-card" aria-hidden="true">
+                          <div class="tubiaotext">私信</div>
+                        </span>
+                      </div>
+
+                    </div>
+
+                    <div class="content4">
+
+                      <div class="text">猎头推荐人才</div>
+                      <div class="tubiao">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true">
+                          <div class="tubiaotext">候选精英</div>
+                        </span>
+                      </div>
+
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="col-md-12 rightbottom">
+                 <div class="casegudong">Case动态&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a src="#">More</a></div>
+
+                <div id="scrollDiv">
+                   <div class="scrollText">
+                      <ul>
+                      <li>猎头顾问XXX ，发布了新Case营运高级经理年薪 40万-60万| 广东省</li>
+                      <li>猎头顾问XX ，发布了新Case营销总监 年薪 40万-60万 | 上海</li>
+                      <li>猎头顾问XXX ，发布了新Case营运高级经理年薪 40万-60万| 广东省</li>
+                      <li>猎头顾问XX ，发布了新Case营销总监 年薪 40万-60万 | 上海</li>
+                      <li>猎头顾问XXX ，发布了新Case营运高级经理年薪 40万-60万| 广东省</li>
+                      <li>猎头顾问XX ，发布了新Case营销总监 年薪 40万-60万 | 上海</li>
+                      <li>猎头顾问XXX ，发布了新Case营运高级经理年薪 40万-60万| 广东省</li>
+                      <li>猎头顾问XX ，发布了新Case营销总监 年薪 40万-60万 | 上海</li>
+                      <li>猎头顾问XXX ，发布了新Case营运高级经理年薪 40万-60万| 广东省</li>
+                      <li>猎头顾问XX ，发布了新Case营销总监 年薪 40万-60万 | 上海</li>
+                      <li>猎头顾问XXX ，发布了新Case营运高级经理年薪 40万-60万| 广东省</li>
+                      <li>猎头顾问XX ，发布了新Case营销总监 年薪 40万-60万 | 上海</li>
+                      </ul>
+                   </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footerbottom">
+    <div><h6>简介</h6>
+     <p>关于无忧精英网</p>
+      <p>功能介绍</p>
+      <p>产品动态</p>
+      <p>校园招聘</p>
+    </div>
+    <div><h6>帮助中心</h6>
+      <p>我是猎头</p>
+      <p>我是精英</p>
+      <p>安全求职</p>
+    </div>
+    <div>
+      <h6>合作</h6>
+      <p>意见反馈</p>
+      <p>猎英俱乐部</p>
+      <p>网站合作</p>
+    </div>
+  </div>
+  <p class="pull-right">
+    <a href="#top">回到顶部</a>
+  </p>
+  <p>© zhoujiamin</p>
+
+</footer>
+
+<!-- 居住城市Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">居住城市</h4>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+        <button type="button" class="btn btn-primary">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 选择地区 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">选择地区</h4>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+        <button type="button" class="btn btn-primary">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="jquery-1.12.3.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jQuery.textSlider.js"></script>
+<script src="wuyou.js"></script>
+
+</body>
+</html>
