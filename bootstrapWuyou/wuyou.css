@@ -1,4 +1,4 @@
-body
+﻿body
 {
     font-family: '宋体';
     /*  background-image: url(images/background.jpg);
@@ -649,5 +649,8 @@ footer #footerbottom div{
      div#bs-example-navbar-collapse-1 form{
         border-width: 0;
 
+     }
+     footer{
+        display: none;
      }
 }
