@@ -14,6 +14,8 @@
 <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 -->
 <link href="wuyou.css" rel="stylesheet"></head>
+<!-- 非响应式 -->
+<link href="noresp.css" rel="stylesheet"></head>
 <body>
 
 <!-- 导航 -->
@@ -22,19 +24,19 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
+      </button> -->
       <a class="navbar-brand brand-image1" href="#">
         <img alt="Brand" src="images/headbrand.png"></a>
       <a class="navbar-brand brand-image2  " href="#">
         <img alt="Brand" src="images/title.png"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div  id="navbar">
       <ul class="nav navbar-nav navbar-right">
         <li>
           <form class="navbar-form " role="search">
@@ -73,9 +75,9 @@
 
   <div class="container">
     <div class="row" id="row1">
-      <div class="col-md-3 left">
+      <div class="col-xs-3 left">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-xs-12">
             <ul class="nav nav-tabs" role="tablist">
               <li role="presentation" class="active">
                 <a id="jingyingid" href="#jingying" aria-controls="home" role="tab" data-toggle="tab">找精英</a>
@@ -89,7 +91,7 @@
             </ul>
           </div>
 
-          <div class="col-md-12">
+          <div class="col-xs-12">
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane  active" id="jingying">
                 <div class="tablefrom1">
@@ -242,10 +244,10 @@
         </div>
       </div>
 
-      <div class="col-md-9" id="colright">
+      <div class="col-xs-9" id="colright">
         <div class="container right">
           <div class="row row2 ">
-            <div class="col-md-12  righttop">
+            <div class="col-xs-12  righttop">
 
               <ul id="centerwell">
                 <li id="photo1">
@@ -392,7 +394,7 @@
 
             </div>
 
-              <div class="col-md-12 rightbottom">
+              <div class="col-xs-12 rightbottom">
                 <div class="casegudong">Case动态&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">More</a>
                 </div>
 
@@ -458,7 +460,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel1">居住城市</h4>
+        <h4 class="modal-title" id="myModalLabel">居住城市</h4>
       </div>
       <div class="modal-body">...</div>
       <div class="modal-footer">
@@ -477,7 +479,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel2">选择地区</h4>
+        <h4 class="modal-title" id="myModalLabel">选择地区</h4>
       </div>
       <div class="modal-body">...</div>
       <div class="modal-footer">

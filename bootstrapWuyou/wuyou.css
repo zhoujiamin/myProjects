@@ -1,4 +1,4 @@
-﻿body
+body
 {
     font-family: '宋体';
     /*  background-image: url(images/background.jpg);
@@ -95,32 +95,32 @@
 }
 
 .middle .left div.col-md-12{
-	margin-left: 0;
-	margin-right: 0;
-	width: 270px;
-	padding-left: 0;
-	padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 270px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .middle .left div.row{
-	
-	padding-left: 0;
-	padding-right: 0;
-	margin-left: 0;
-	margin-right: 0;
+  
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .middle  div#row1{
-	
-	margin-left: 0;
-	margin-right: 0;
+  
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .middle  div#row1 #colright,
 .middle  div#row1 .right{
-	padding: 0;
-	width: 810px;
-	background-color: white;
+  padding: 0;
+  width: 810px;
+  background-color: white;
 }
 
 
@@ -316,11 +316,11 @@
 }
 
 .left .tab-content div#case div.input-group label{
-	margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 #case  img{
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 
@@ -358,7 +358,7 @@
 }
 
 #lietou  img{
-	margin-top: 176px;
+  margin-top: 176px;
 }
 
 
@@ -366,12 +366,12 @@
 
 .middle .right
 {
-	height: 604px;
+  height: 604px;
 
 }
 .middle .right .row2
 {
-	margin:0;
+  margin:0;
 
 }
 
@@ -613,9 +613,9 @@ footer #footerbottom div{
 }
 
 
-@media screen and (max-width: 1200px)
+/* @media screen and (max-width: 1200px)
 {
-    /* 响应式的导航栏 */
+    响应式的导航栏
     .navbar-right .checkbox
     {
         color: black;
@@ -653,4 +653,4 @@ footer #footerbottom div{
      footer{
         display: none;
      }
-}
+} */
