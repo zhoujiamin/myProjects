@@ -1,12 +1,12 @@
-var WIDTH = 1024;
+/*var WIDTH = 1024;
 var HEIGHT = 768;
 
-var R = 8;
+var R = 8;*/
 
 var endDate = new Date();
 endDate.setDate(endDate.getDate()+1);
-var Margin_TOP = 60;
-var Margin_Left = 30;
+/*var Margin_TOP = 60;
+var Margin_Left = 30;*/
 var showTime = 0;
 
 var ball = [];
@@ -15,6 +15,12 @@ var color = ["#FF0033", "#FFCC00", "#FF6666", "#ef3600", "#FFFF00", "#CC0033",
 ];
 
 function init() {
+	WIDTH=document.body.clientWidth;
+	HEIGHT=document.body.clientHeight;
+    Margin_Left=Math.round(WIDTH/10);
+    R=Math.round(WIDTH*4/5/108)-1;
+    Margin_TOP=Math.round(HEIGHT/5);
+
 	var canvas = document.getElementById("canvas");
 	canvas.width = WIDTH;
 	canvas.height = HEIGHT;
@@ -153,6 +159,17 @@ function updateBall() {
 			ball[i].Vy = -ball[i].Vy * 0.7; //0.7是摩擦系数
 		}
 	}
+
+
+    //性能优化，删除不要的小球
+	var ctx=0;
+	for (var j = 0; j < ball.length; j++) {
+		if ((ball[j].X+R>0)&& (ball[j].X-R<WIDTH) ) {
+			ball[ctx]=ball[j];
+			ctx++;
+		} 	
+	}
+	ball.length=ctx;
 
 
 
