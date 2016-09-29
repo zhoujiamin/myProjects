@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5canvas炫酷倒计时</title>
+    <style type="text/css">
+    #canvas {
+        /* height: 100%; */
+    }
+    
+    body {
+        height: 100%;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    #name {
+        color: #ef3600;
+        font-size: 18px;
+        font-family: '微软雅黑';
+    }
+    
+    #name img {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        border-radius: 60px;
+        animation: back 5s ease forwards;
+        -moz-animation: back 5s ease forwards;
+        /* Firefox */
+        -webkit-animation: back 5s ease forwards;
+        /* Safari and Chrome */
+        -o-animation: back 5s ease forwards;
+        /* Opera */
+    }
+    
+    @keyframes back {
+        from {
+            opacity:1;
+        }
+        to {
+             opacity:0;
+        }
+    }
+    
+    #name .foot {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        color: #F9EC00;
+        font-size: calc(100vw/15);
+        font-family: '微软雅黑';
+        transform: translate(-50%, -50%);
+         animation: back 5s ease forwards;
+        -moz-animation: back 5s ease forwards;
+        /* Firefox */
+        -webkit-animation: back 5s ease forwards;
+        /* Safari and Chrome */
+        -o-animation: back 5s ease forwards;
+    }
+    
+    #name .foot p {
+        margin: 0;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="name"><img src="background.jpg">
+        <div class="foot">
+            <p>喜迎国庆</p>
+            <p>倒计时!</p>
+        </div>
+    </div>
+    <canvas id="canvas">"请更换浏览器"</canvas>
+    <script type="text/javascript" src="digit.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+</body>
+
+</html>
