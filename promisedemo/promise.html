@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise Demo</title>
+    <style type="text/css">
+    .ball{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .ball1{
+        background-color:red;
+    }
+    .ball2{
+        background-color:yellow;
+    }
+    .ball3{
+        background-color:green;
+    }
+    div#demo{
+        font-size:15px;
+        padding: 20px 0;
+    }
+    </style>
+</head>
+<body>
+    <div id='demo'>本demo旨在学习Promise的用法，详情请见<a href="">readme</a></div>
+    <div class="ball ball1"style="margin-left:0"></div>
+    <div class="ball ball2"style="margin-left:0"></div>
+    <div class="ball ball3"style="margin-left:0"></div>
+
+    <script type="text/javascript">
+
+    var ball1 = document.querySelector(".ball1");
+    var ball2 = document.querySelector(".ball2");
+    var ball3 = document.querySelector(".ball3");
+
+    function promiseAnimate(ball,distance){
+        var promise = new Promise(function(resolve, reject) {
+        function animate(){
+            setTimeout(function(){
+            //console.log(ball);
+            var marginleft = parseInt(ball.style.marginLeft,10);
+            //console.log(marginleft);
+            if(marginleft===distance){
+                resolve();//让状态改变
+            }else{
+                if(marginleft<distance){
+                    marginleft++;
+                }else{
+                    marginleft--;
+                }
+                ball.style.marginLeft = marginleft+'px';
+                animate();
+            }
+            },13);
+        }
+        animate(); 
+        });
+        return promise;
+    }
+    promiseAnimate(ball1,100)
+        .then(function(){
+            return promiseAnimate(ball2,200);
+        }).then(function(){
+            return promiseAnimate(ball3,300);
+        }).then(function(){
+            return promiseAnimate(ball3,150);
+        })
+        .then(function(){
+            return promiseAnimate(ball2,150);
+        })
+        .then(function(){
+            return promiseAnimate(ball1,150);
+        });
+    </script>
+</body>
+</html>
