@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打不死的灰太狼 html5 game</title>
+</head>
+<style type="text/css">
+  #game{
+			margin: 0 auto;
+			width:802px;
+  } 
+	#myCanvas{
+		border: 1px dotted #ccc;
+		margin: 0 auto;
+	}
+	#over{
+		display: none;
+	}
+	.overbG{
+     background-color: #272525;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     opacity: 0.6;
+	}
+	.kid{
+		position: fixed;
+		top:0;
+		animation: overanimation  ease-in-out 3s  infinite ;
+		-moz-animation: overanimation ease-in-out 3s infinite ;	/* Firefox */
+    -webkit-animation: overanimation ease-in-out 3s infinite ;	/* Safari 和 Chrome */
+    -o-animation: overanimation ease-in-out 3s infinite ;
+	}
+	#over button{
+		position: fixed;
+		top: 50%;
+		left:50%;
+		-webkit-transform: translate(-50%,-50%);
+		-moz--transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%); 
+		transform: translate(-50%,-50%);
+		color: #ffffff;
+    cursor: pointer;
+    background: #20b9a4;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 200px;
+    line-height: 20px;
+    font-size: 20px;
+    padding: 12px 18px 13px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+	}
+	@keyframes overanimation{
+		0%   {transform:rotate(0deg);}
+		25%  {transform:rotate(144deg);}
+		50%  {transform:rotate(216deg);}
+		75%  {transform:rotate(288deg);}
+		100% {transform:rotate(360deg);}
+	}
+	@-moz-keyframes myfirst 
+	{
+		0%   {transform:rotate(0deg);}
+		25%  {transform:rotate(144deg);}
+		50%  {transform:rotate(216deg);}
+		75%  {transform:rotate(288deg);}
+		100% {transform:rotate(360deg);}
+	}
+
+	@-webkit-keyframes myfirst
+	{
+		0%   {transform:rotate(0deg);}
+		25%  {transform:rotate(144deg);}
+		50%  {transform:rotate(216deg);}
+		75%  {transform:rotate(288deg);}
+		100% {transform:rotate(360deg);}
+	}
+
+	@-o-keyframes myfirst 
+	{
+		0%   {transform:rotate(0deg);}
+		25%  {transform:rotate(144deg);}
+		50%  {transform:rotate(216deg);}
+		75%  {transform:rotate(288deg);}
+		100% {transform:rotate(360deg);}
+  }
+</style>
+<body>
+<div id="game">
+  <canvas id="score" width="800" height="50"></canvas>
+	<canvas id="myCanvas" width="800" height="450"></canvas>
+</div> 
+
+<div id="over">
+	<div class="overbG">
+		</div>
+		<img class="kid" src="./images/kid.png">
+		<button onclick="location.reload()">PLAY AGAIN</button>
+</div>
+	
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
