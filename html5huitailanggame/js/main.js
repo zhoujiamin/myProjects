@@ -51,8 +51,8 @@
 	function init() {
 		gray.x = WIDTH / 2 - grayImg.width + (Math.random() - 0.5) * (WIDTH / 2);
 		gray.y = HEIGHT / 2 - grayImg.height + (Math.random() - 0.5) * (HEIGHT / 2);
-		red.x = WIDTH / 2 - redImg.width;
-		red.y = HEIGHT / 2 - redImg.height;
+		/*red.x = WIDTH / 2 - redImg.width;
+		red.y = HEIGHT / 2 - redImg.height;*/
 		gray.direction = [0, 1, 2, 3][Math.floor(Math.random() * 4)];
 		if (backgroundLoad) { //判断背景有没有画出来了
 			cxt.drawImage(backgroundImg, 0, 0);
