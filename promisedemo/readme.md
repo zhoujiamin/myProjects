@@ -1,4 +1,5 @@
 ##Promise Demo简介
+demo地址：[Promise Demo](http://zhoujiamin.github.io/myProjects/promisedemo/promise.html)
 ###作者意图
 学习了使用Promise来简化回调函数，使用链式写法来规范程序，使得程序清晰且容易维护。
 理论参考了阮大大的[Promise对象](http://javascript.ruanyifeng.com/advanced/promise.html#toc10)。
