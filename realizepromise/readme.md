@@ -404,24 +404,35 @@ resolve = function(val) {
 ![eg1](./images/eg1.png)
 
 对于eg3:
+
 ![eg3](./images/eg3.png)
+
 对于eg4:
+
 ![eg4](./images/eg4.png)
-对于eg6:then1中没有参数，fun1,fun2分别在内部被实现为
+
+对于eg6:
+
+then1中没有参数，fun1,fun2分别在内部被实现为
 
 ```
 fun1=function(value) {return value;}
 fun2=function(value) {throw value};
 ```
+
 ![eg6](./images/eg6.png)
+
 对于eg9:
 
 要注意then的参数fun2是不存在的
 ```
 fun2=function(value) {throw value};
 ```
+
 ![eg9](./images/eg9.png)
+
 对于eg10:
+
 ![eg10](./images/eg10.png)
 
 
