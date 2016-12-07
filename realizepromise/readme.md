@@ -119,7 +119,7 @@ timeout(100).then().then((value) => {
 
 
 
-**注1**:P Promise对象与事件不同，即使添加then方法的时候，函数状态已经变化,还是会立即执行函数
+**注1**: Promise对象与事件不同，即使添加then方法的时候，函数状态已经变化,还是会立即执行函数
 
 ```
 eg7
@@ -133,7 +133,7 @@ promise.then(null,function(val){
 //error
 ```
 
-**注2**:P then方法中的函数参数是异步任务
+**注2**: then方法中的函数参数是异步任务
 
 ```
 eg8
@@ -155,7 +155,7 @@ console.log('Hi!');
 
 可以看到，promise赋值时，Promise中的函数参数直接执行，显示了'Promise'，然后resovle()执行后，then的函数参数没有执行，而是当所有同步任务执行完之后才会执行。
 
-**注3**:P resolve的参数可能是promise对象
+**注3**: resolve的参数可能是promise对象
 
 
 ```
@@ -177,7 +177,7 @@ p2
 由于resolve(p1),后面then方法何时执行，将取决于p1。
 
 ## 实现Promise
-**注意**:P 以下promise为Promise实例
+**注意**: 以下promise为Promise实例
 
 首先实现一个最简单的Promise函数结构，总体的思想是将then中的2个方法存到2个数组中，当resolve/reject函数执行时，promise状态改变，数组被推出来执行
 
