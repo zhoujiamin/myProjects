@@ -1,10 +1,10 @@
-##Promise Demo简介
+## Promise Demo简介
 demo地址：[Promise Demo](http://zhoujiamin.github.io/myProjects/promisedemo/promise.html)
-###作者意图
+### 作者意图
 学习了使用Promise来简化回调函数，使用链式写法来规范程序，使得程序清晰且容易维护。
 理论参考了阮大大的[Promise对象](http://javascript.ruanyifeng.com/advanced/promise.html#toc10)。
 动画参考了慕课网的[进击nodejs基础](http://www.imooc.com/video/11549)课程。该课程使用了bluebird引入了Promise，但目前浏览器都慢慢开始支持原生的Promise，所以不再需要引入别的库。
-###代码简介
+### 代码简介
 核心代码如下：
 
     function promiseAnimate(ball,distance){

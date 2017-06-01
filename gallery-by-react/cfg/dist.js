@@ -2,7 +2,7 @@
 
 let path = require('path');
 let webpack = require('webpack');
-
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 let baseConfig = require('./base');
 let defaultSettings = require('./defaults');
 
@@ -13,6 +13,11 @@ let config = Object.assign({}, baseConfig, {
   entry: path.join(__dirname, '../src/index'),
   cache: false,
   devtool: 'sourcemap',
+  output: {
+    path: path.join(__dirname, '/../dist/assets'),
+    filename: 'app.js',
+    publicPath: './assets/'
+  },
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
@@ -24,7 +29,8 @@ let config = Object.assign({}, baseConfig, {
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+
   ],
   module: defaultSettings.getDefaultModules()
 });
