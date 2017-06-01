@@ -1,0 +1,122 @@
+/* Base Application Styles */
+
+html,
+body {
+    background: #222;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 0px;
+}
+
+
+/*wrap start */
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 680px;
+}
+
+/*wrap end */
+
+
+/*img-wrap start */
+
+.img-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ddd;
+    perspective: 400px;
+    figure {
+        &.is-inverse {
+            transform: translate(-50%, -50%) rotateY(-180deg) !important;
+        }
+        transform-style: preserve-3d;
+        /*         transform-origin:0 50% 0; */
+        perspective: 400px;
+        position: absolute;
+        transition: left 0.6s ease-in-out,
+        top 0.6s ease-in-out,
+        transform 0.6s ease-in-out;
+        margin: 0;
+        width: 240px;
+        padding: 40px;
+        background-color: white;
+        text-align: center;
+        cursor: pointer;
+        .imgstyle {
+            width: 240px;
+        }
+        figcaption {
+            color: #a7a0a2;
+            h2 {
+                margin: 20px 0 0 0;
+                font-size: 16px;
+            }
+            .img-des {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 50px 40px;
+                overflow: auto;
+                font-size: 22px;
+                line-height: 1.25;
+                text-align: left;
+                background-color: #fff;
+                transform: rotateY(180deg);
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+/*img-wrap end */
+
+
+/*controller-nav start */
+
+.controller-nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
+    z-index: 100;
+    text-align: center;
+    span {
+        display: inline-block;
+        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #aaa;
+        border-radius: 50%;
+        transform: scale(.5);
+        transition:transform 0.6s ease-in-out;
+        img {
+            width: 30px;
+            display: none
+        }
+        &.ctrl-center {
+            transform: scale(1);
+            img {
+                transform: rotate(-30deg);
+                display: inline-block;
+            }
+            &.ctrl-inverse {
+                background-color: #555;
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+/*controller-nav start */
